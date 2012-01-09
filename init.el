@@ -6,11 +6,11 @@
 (load "thrift") ;; best not to include the ending “.el” or “.elc”
 
 ;; clojure-mode
-(add-to-list 'load-path "~/.emacs.d/clojure-mode")
+(add-to-list 'load-path "~/.emacs.d/vendor/clojure-mode")
 (require 'clojure-mode)
 
 ;; paredit
-(add-to-list 'load-path "~/.emacs.d/paredit")
+(add-to-list 'load-path "~/.emacs.d/vendor/paredit")
 (require 'paredit)
 
 ;; slime
@@ -21,7 +21,7 @@
 	  (add-hook 'slime-repl-mode-hook 'paredit-mode-enable)
 	  (setq slime-protocol-version 'ignore)))
 
-(add-to-list 'load-path "~/opt/.emacs.d")
+(add-to-list 'load-path "~/.emacs.d/vendor/slime")
 (require 'slime)
 (slime-setup)
 
