@@ -9,6 +9,10 @@
 (add-to-list 'load-path "~/.emacs.d/vendor/clojure-mode")
 (require 'clojure-mode)
 
+;; scala-mode
+(add-to-list 'load-path "~/.emacs.d/vendor/scala-mode")
+(require 'scala-mode)
+
 ;; paredit
 (add-to-list 'load-path "~/.emacs.d/vendor/paredit")
 (require 'paredit)
@@ -26,15 +30,17 @@
 (slime-setup)
 
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (misterioso)))
- '(inhibit-startup-screen t))
+ '(inhibit-startup-screen t)
+ '(show-paren-mode t)
+ '(tool-bar-mode nil))
 (custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
  )
