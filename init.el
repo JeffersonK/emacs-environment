@@ -29,6 +29,9 @@
 (require 'slime)
 (slime-setup)
 
+;;(load-file "~/.emacs.d/color-themes/themes/zenburn-theme.el")
+;;(zenburn)
+
 (custom-set-variables
   ;; custom-set-variables was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
