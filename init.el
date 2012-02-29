@@ -5,6 +5,8 @@
 ;; load the packaged named xyz.
 (load "thrift") ;; best not to include the ending “.el” or “.elc”
 
+;;(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
+
 ;; clojure-mode
 (add-to-list 'load-path "~/.emacs.d/vendor/clojure-mode")
 (require 'clojure-mode)
@@ -29,8 +31,15 @@
 (require 'slime)
 (slime-setup)
 
-;;(load-file "~/.emacs.d/color-themes/themes/zenburn-theme.el")
-;;(zenburn)
+(load-file "~/.emacs.d/color-themes/themes/zenburn-theme.el")
+(zenburn)
+
+(require 'smex)
+(smex-initialize)
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+;; This is your old M-x.
+(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 (custom-set-variables
   ;; custom-set-variables was added by Custom.
