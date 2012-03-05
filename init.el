@@ -37,8 +37,15 @@
 (require 'slime)
 (slime-setup)
 
-(load-file "~/.emacs.d/color-themes/themes/zenburn-theme.el")
-(zenburn)
+(add-to-list 'load-path "~/.emacs.d/color-theme-6.6.0")
+(require 'color-theme)
+
+(add-to-list 'load-path "~/.emacs.d/emacs-color-theme-solarized")
+(require 'color-theme-solarized)
+
+;;(require 'color-theme-autoload "color-theme-autoloads")
+;;(load-file "~/.emacs.d/color-themes/themes/zenburn-theme.el")
+;;(zenburn)
 
 (require 'smex)
 (smex-initialize)
