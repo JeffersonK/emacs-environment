@@ -2,6 +2,22 @@
 ;; this is the dir you place all your extra packages
 (add-to-list 'load-path "~/.emacs.d/")
 
+(add-to-list 'load-path "~/.emacs.d/magit-1.1.1")
+(require 'magit)
+
+(add-to-list 'load-path "~/.emacs.d/yasnippet")
+(require 'yasnippet)
+
+(add-to-list 'load-path "~/.emacs.d/Pymacs")
+(autoload 'pymacs-apply "pymacs")
+(autoload 'pymacs-call "pymacs")
+(autoload 'pymacs-eval "pymacs" nil t)
+(autoload 'pymacs-exec "pymacs" nil t)
+(autoload 'pymacs-load "pymacs" nil t)
+(autoload 'pymacs-autoload "pymacs")
+;;(eval-after-load "pymacs"
+;;  '(add-to-list 'pymacs-load-path YOUR-PYMACS-DIRECTORY"))
+
 ;; load the packaged named xyz.
 (load "thrift") ;; best not to include the ending “.el” or “.elc”
 
